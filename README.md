@@ -10,9 +10,8 @@ An elegant animate.css plugin for tailwindcss.
 npm i tailwindcss-animate-plugin
 ```
 
-
 2. Add plugin in `tailwind.config.ts`
-   
+
 ```ts
 import animatePlugin from "tailwindcss-animate-plugin";
 import type { Config } from "tailwindcss";
@@ -29,16 +28,6 @@ const config: Config = {
 export default config;
 ```
 
-3. Copy `class` in `[animate.css](https://animate.style)` 
+3. Copy `class` in [animate.css](https://animate.style), replace `__` with `--`.
 
-Replace the class `__` with `--`.
-
-For example: `animate__bounce`
-
-Change `animate__bounce` to `animate--bounce`.
-
-
-
-
-
-
+For example: `animate__bounce`, change `animate__bounce` to `animate--bounce`.
