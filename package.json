@@ -1,0 +1,46 @@
+{
+  "name": "tailwindcss-animate-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "pnpm generate-plugin && bunchee --external=tailwindcss ./src/index.ts && cp src/animate.global.css ./dist",
+    "combine-animatecss": "pnpx css-combine animate.css/source/animate.css > scripts/animate.output.css",
+    "generate-plugin": "node scripts/generate.mjs",
+    "test": "tailwindcss -c ./e2e-tests/tailwind.config.js -i ./e2e-tests/input.css -o ./e2e-tests/output.css && node e2e-tests/test.mjs"
+  },
+  "devDependencies": {
+    "cssom": "^0.5.0",
+    "tailwindcss": "^3",
+    "bunchee": "^3.9.0"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "packageManager": "pnpm@7.28.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhaotian/tailwindcss-animate-plugin.git"
+  },
+  "author": {
+    "name": "@suhaotian"
+  },
+  "bugs": {
+    "url": "https://github.com/suhaotian/tailwindcss-animate-plugin/issues"
+  },
+  "homepage": "https://github.com/suhaotian/tailwindcss-animate-plugin",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    "types": "./dist/types/index.d.ts",
+    "import": "./dist/index.mjs",
+    "module": "./dist/index.esm.js",
+    "require": "./dist/index.cjs"
+  },
+  "keywords": [
+    "animate.css",
+    "tailwindcss"
+  ],
+  "license": "MIT"
+}
