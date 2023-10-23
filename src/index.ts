@@ -10,8 +10,10 @@ export default function getPlugin() {
     },
     {
       theme: {
-        keyframes: animateKeyframes,
-        animation: animateAnimation,
+        extend: {
+          keyframes: animateKeyframes,
+          animation: animateAnimation,
+        },
       },
     }
   );
