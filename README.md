@@ -1,6 +1,6 @@
 # Tailwindcss plugin for animate.css
 
-An elegant animate.css plugin for tailwindcss.
+An elegant [animate.css](https://animate.style) plugin for tailwindcss.
 
 ## Install
 
@@ -8,7 +8,7 @@ An elegant animate.css plugin for tailwindcss.
 npm i tailwindcss-animate-plugin
 ```
 
-## Usage
+## Usage(3 steps)
 
 1. Add plugin in `tailwind.config.ts`
 
@@ -32,7 +32,7 @@ export default config;
 
 For example: `animate__bounce`, change `animate__bounce` to `animate--bounce`.
 
-3. Add below content to css file:
+3. Add below content to your global css file:
 
 ```css
 :root {

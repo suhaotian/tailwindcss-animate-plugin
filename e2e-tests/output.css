@@ -5,13 +5,13 @@
 }
 
 @media print, (prefers-reduced-motion: reduce) {
-  .animate-animated {
+  .animate--animated {
     animation-duration: 1ms !important;
     transition-duration: 1ms !important;
     animation-iteration-count: 1 !important;
   }
 
-  .animate-animated[class*='Out'] {
+  .animate--animated[class*='Out'] {
     opacity: 0;
   }
 }
@@ -618,6 +618,16 @@ video {
 
 .-animate-jello {
   animation: -jello;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .p-10 {
